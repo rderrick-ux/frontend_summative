@@ -40,6 +40,10 @@ Tech Stack
 3. Regex powered validation.
 4. Mobile responsive design.
 
-Live Demo Link
+Video Demo Link
 
 https://youtu.be/DjayBr3m2D0
+
+Site link
+
+https://rderrick-ux.github.io/frontend_summative/
