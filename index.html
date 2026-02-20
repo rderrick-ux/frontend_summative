@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Finance Tracker</title>
+  <meta name="description" content="Track your student expenses, budget, and spending habits with this finance management app." />
+  <meta name="theme-color" content="#0d9488" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/tables.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+</head>
+<body>
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__icon-box">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>
+        </div>
+        <div>
+          <h1 class="sidebar__brand-title">Finance Tracker</h1>
+          <p class="sidebar__brand-sub">Student Edition</p>
+        </div>
+      </div>
+
+      <nav class="sidebar__nav">
+        <ul class="sidebar__nav-list" id="sidebar-nav-list" role="list">
+        </ul>
+      </nav>
+
+      <div class="sidebar__footer">
+        <p>Built by Rugwiro Celio Derrick</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div class="main-content__inner">
+        <section class="page active" id="page-about" aria-label="About page"></section>
+        <section class="page" id="page-dashboard" aria-label="Dashboard page"></section>
+        <section class="page" id="page-transactions" aria-label="Transactions page"></section>
+        <section class="page" id="page-add" aria-label="Add transaction page"></section>
+        <section class="page" id="page-settings" aria-label="Settings page"></section>
+      </div>
+    </main>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Main navigation">
+    </nav>
+
+    <div class="sr-only" id="sr-announcer" aria-live="polite" role="status"></div>
+  </div>
+
+  <script src="js/validators.js"></script>
+  <script src="js/transactions.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
